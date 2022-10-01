@@ -14,9 +14,13 @@ int main(){
 	// Read a number as input
 	cout << "Guess a number from 1 to 10: ";
 	cin >> guess;
-	// Generate a random number
+	// Seed the pseudorandom number generator
+	// - this ensures that calls to rand() don't return the same sequence of numbers each time
 	srand(time(NULL));
+	
+	// Generate a random number
 	actual = generate_num(); // function call
+	
 	while(true){
 		// Check if the two numbers match and store the result 
 		result = check_match(guess, actual);
@@ -27,6 +31,7 @@ int main(){
 		}
 		cin >> guess ;
 	}
+	
 	cout << "Computer picked " << actual << endl;
 	return 0;
 }
