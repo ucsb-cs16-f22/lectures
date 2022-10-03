@@ -8,7 +8,7 @@ int main(){
 	// Choose E if code has a compile time error i
 	// because variable i is declared multiple times
 	
-	// Code A
+	// Code A: prints 5 times
 	for(int i = 0; i < 5; i++){
 		cout << "Hello ";
 	}

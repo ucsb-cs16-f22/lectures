@@ -8,28 +8,28 @@ int main(){
 	// Choose E for "all of them"	
 
 	// Code A
-	int j = 0
+	int j = 0;
 	for(; j < 5; j++){
 		cout << "Hello ";
 	}
 	cout << endl;
 
-	// Code B
-	for(int i = 0 ; ; i++){
-		cout << "Hello ";
+	// Code B: infinite loop
+	for(int i = 0 ; i< 10; i++){
+		cout << "Hello B";
 	}
 	cout << endl;
 
 	// Code C
 	for(int i = 0; i < 5;){
-		cout << "Hello ";
+		cout << "Hello C";
 		i++;
 	}
 	cout << endl;
 
 	// Code D
 	for(int i = 5; i > 0; i++){
-		cout << "Hello ";
+		cout << "Hello D";
 	}
 	cout << endl;
 

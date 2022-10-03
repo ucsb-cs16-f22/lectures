@@ -7,8 +7,9 @@ int main(){
 	// Which code has a compile-time error? 
 	// Choose E for "all of them"	
 
-	// Code A
-	for(; i < 5; i++){
+	// Code A: i is not declared, compiler error
+	// fix this
+	for(int i = 0; i < 5; i++){
 		cout << "Hello ";
 	}
 	cout << endl;

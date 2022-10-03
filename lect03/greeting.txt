@@ -1,0 +1,7 @@
+How are you today?
+A. Happy
+B. Excited
+C. Anxious
+D. Tired
+E. Just okay!
+
