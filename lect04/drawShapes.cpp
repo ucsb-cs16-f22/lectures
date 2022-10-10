@@ -13,7 +13,7 @@ string returnNstars(int n){
 
 }
 
-string drawRectOfStars(int rows, int cols){
+string drawRect(int rows, int cols){
 	result = "";
 	for(int i = 0; i < rows; i++){
 		result += returnNstars(cols);
@@ -23,7 +23,7 @@ string drawRectOfStars(int rows, int cols){
 
 int main(){
 	cout << " Draw a rectangle" << endl;
- 	cout << drawRectOfStars(4, 5);
+ 	cout << drawRect(4, 5);
 
 	return 0;
 }
