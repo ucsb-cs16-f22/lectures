@@ -1,0 +1,526 @@
+dibamirza@panther lect06 % g++ shapes.cpp
+dibamirza@panther lect06 % g++ -c shapes.cpp
+dibamirza@panther lect06 % ls
+Makefile        shapes.cpp      shapes.o        testshapes.cpp
+dibamirza@panther lect06 % ./shapes.o
+zsh: permission denied: ./shapes.o
+dibamirza@panther lect06 % g++ testshapes.cpp 
+testshapes.cpp:2:10: error: 'shapes.cpp' file not found with <angled> include; use "quotes" instead
+#include <shapes.cpp>
+         ^~~~~~~~~~~~
+         "shapes.cpp"
+1 error generated.
+dibamirza@panther lect06 % g++ testshapes.cpp
+dibamirza@panther lect06 % ./a.out 
+drawRect(4, 5)
+*****
+*****
+*****
+*****
+drawArrow(1)
+*
+drawArrow(2)
+*
+**
+*
+drawArrow(3)
+*
+**
+***
+**
+*
+drawArrow(4)
+*
+**
+***
+****
+***
+**
+*
+drawArrow(5)
+*
+**
+***
+****
+*****
+****
+***
+**
+*
+drawArrow(6)
+*
+**
+***
+****
+*****
+******
+*****
+****
+***
+**
+*
+drawArrow(7)
+*
+**
+***
+****
+*****
+******
+*******
+******
+*****
+****
+***
+**
+*
+drawArrow(8)
+*
+**
+***
+****
+*****
+******
+*******
+********
+*******
+******
+*****
+****
+***
+**
+*
+drawArrow(9)
+*
+**
+***
+****
+*****
+******
+*******
+********
+*********
+********
+*******
+******
+*****
+****
+***
+**
+*
+drawmirroredC(4, 5)
+*****
+     
+*****
+     
+dibamirza@panther lect06 % g++ testshapes.cpp 
+testshapes.cpp:8:11: error: use of undeclared identifier 'drawRect'
+        cout << drawRect(4, 5);
+                ^
+testshapes.cpp:12:12: error: use of undeclared identifier 'drawArrow'
+                cout << drawArrow(i);
+                        ^
+testshapes.cpp:17:11: error: use of undeclared identifier 'drawmirroredC'
+        cout << drawmirroredC(4, 5);
+                ^
+3 errors generated.
+dibamirza@panther lect06 % g++ testshapes.cpp
+Undefined symbols for architecture arm64:
+  "drawmirroredC(int, int)", referenced from:
+      _main in testshapes-5e5a2f.o
+  "drawRect(int, int)", referenced from:
+      _main in testshapes-5e5a2f.o
+  "drawArrow(int)", referenced from:
+      _main in testshapes-5e5a2f.o
+ld: symbol(s) not found for architecture arm64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+dibamirza@panther lect06 % g++ testshapes.cpp shapes.cpp -o test
+dibamirza@panther lect06 % ./test
+drawRect(4, 5)
+*****
+*****
+*****
+*****
+drawArrow(1)
+*
+drawArrow(2)
+*
+**
+*
+drawArrow(3)
+*
+**
+***
+**
+*
+drawArrow(4)
+*
+**
+***
+****
+***
+**
+*
+drawArrow(5)
+*
+**
+***
+****
+*****
+****
+***
+**
+*
+drawArrow(6)
+*
+**
+***
+****
+*****
+******
+*****
+****
+***
+**
+*
+drawArrow(7)
+*
+**
+***
+****
+*****
+******
+*******
+******
+*****
+****
+***
+**
+*
+drawArrow(8)
+*
+**
+***
+****
+*****
+******
+*******
+********
+*******
+******
+*****
+****
+***
+**
+*
+drawArrow(9)
+*
+**
+***
+****
+*****
+******
+*******
+********
+*********
+********
+*******
+******
+*****
+****
+***
+**
+*
+drawmirroredC(4, 5)
+*****
+     
+*****
+     
+dibamirza@panther lect06 % make                                 
+g++  -std=c++11 -Wall    testshapes.cpp shapes.cpp   -o testshapes
+./testshapes
+drawRect(4, 5)
+*****
+*****
+*****
+*****
+drawArrow(1)
+*
+drawArrow(2)
+*
+**
+*
+drawArrow(3)
+*
+**
+***
+**
+*
+drawArrow(4)
+*
+**
+***
+****
+***
+**
+*
+drawArrow(5)
+*
+**
+***
+****
+*****
+****
+***
+**
+*
+drawArrow(6)
+*
+**
+***
+****
+*****
+******
+*****
+****
+***
+**
+*
+drawArrow(7)
+*
+**
+***
+****
+*****
+******
+*******
+******
+*****
+****
+***
+**
+*
+drawArrow(8)
+*
+**
+***
+****
+*****
+******
+*******
+********
+*******
+******
+*****
+****
+***
+**
+*
+drawArrow(9)
+*
+**
+***
+****
+*****
+******
+*******
+********
+*********
+********
+*******
+******
+*****
+****
+***
+**
+*
+drawmirroredC(4, 5)
+*****
+     
+*****
+     
+dibamirza@panther lect06 % g++ drawMountain.cpp shapes.cpp -o mountain
+dibamirza@panther lect06 % ./mountain 10
+*
+**
+***
+****
+*****
+******
+*******
+********
+*********
+**********
+*********
+********
+*******
+******
+*****
+****
+***
+**
+*
+dibamirza@panther lect06 % make mountain
+make: `mountain' is up to date.
+dibamirza@panther lect06 % make clean
+rm testshapes mountain
+dibamirza@panther lect06 % make mountain
+g++  -std=c++11 -Wall    drawMountain.cpp shapes.cpp   -o mountain
+./mountain
+Usage: ./mountainnumber
+dibamirza@panther lect06 % make mountain
+make: `mountain' is up to date.
+dibamirza@panther lect06 % ./mountain 5
+*
+**
+***
+****
+*****
+****
+***
+**
+*
+dibamirza@panther lect06 % make testshapes
+g++  -std=c++11 -Wall    testshapes.cpp shapes.cpp   -o testshapes
+./testshapes
+drawRect(4, 5)
+*****
+*****
+*****
+*****
+drawArrow(1)
+*
+drawArrow(2)
+*
+**
+*
+drawArrow(3)
+*
+**
+***
+**
+*
+drawArrow(4)
+*
+**
+***
+****
+***
+**
+*
+drawArrow(5)
+*
+**
+***
+****
+*****
+****
+***
+**
+*
+drawArrow(6)
+*
+**
+***
+****
+*****
+******
+*****
+****
+***
+**
+*
+drawArrow(7)
+*
+**
+***
+****
+*****
+******
+*******
+******
+*****
+****
+***
+**
+*
+drawArrow(8)
+*
+**
+***
+****
+*****
+******
+*******
+********
+*******
+******
+*****
+****
+***
+**
+*
+drawArrow(9)
+*
+**
+***
+****
+*****
+******
+*******
+********
+*********
+********
+*******
+******
+*****
+****
+***
+**
+*
+drawmirroredC(4, 5)
+*****
+     
+*****
+     
+dibamirza@panther lect06 % 
+dibamirza@panther lect06 % 
+dibamirza@panther lect06 % 
+dibamirza@panther lect06 % g++ -c drawMountain.cpp 
+dibamirza@panther lect06 % ls drawMountain.o 
+drawMountain.o
+dibamirza@panther lect06 % g++  drawMountain.cpp shapes.cpp   -o mountain 
+dibamirza@panther lect06 % g++  drawMountain.cpp shapes.cpp   -o mountain
+drawMountain.cpp:15:11: error: use of undeclared identifier 'drawArrow'
+        cout << drawArrow(stoi(argv[1]));
+                ^
+1 error generated.
+dibamirza@panther lect06 % g++  drawMountain.cpp shapes.cpp   -o mountain
+dibamirza@panther lect06 % g++  drawMountain.cpp shapes.cpp   -o mountain
+dibamirza@panther lect06 % g++ -c drawMountain.cpp
+dibamirza@panther lect06 % g++ -c drawMountain.cpp
+dibamirza@panther lect06 % g++  drawMountain.cpp shapes.cpp   -o mountain
+dibamirza@panther lect06 % g++  drawMountain.cpp shapes.cpp   -o mountain
+drawMountain.cpp:8:5: error: redefinition of 'x'
+int x;
+    ^
+drawMountain.cpp:7:5: note: previous definition is here
+int x;
+    ^
+1 error generated.
+dibamirza@panther lect06 % g++  drawMountain.cpp shapes.cpp   -o mountain
+In file included from drawMountain.cpp:4:
+./shapes.h:18:5: error: redefinition of 'x'
+int x = 10;
+    ^
+drawMountain.cpp:3:10: note: './shapes.h' included multiple times, additional include site here
+#include "shapes.h"
+         ^
+drawMountain.cpp:4:10: note: './shapes.h' included multiple times, additional include site here
+#include "shapes.h"
+         ^
+./shapes.h:18:5: note: unguarded header; consider using #ifdef guards or #pragma once
+int x = 10;
+    ^
+1 error generated.
+dibamirza@panther lect06 % g++  drawMountain.cpp shapes.cpp   -o mountain
+dibamirza@panther lect06 %
