@@ -1,0 +1,111 @@
+dibamirza@panther lect07 % make swap
+c++     swap.cpp   -o swap
+dibamirza@panther lect07 % ./swap
+&a: 0x16bcab12c &b: 0x16bcab128
+&x: 0x16bcab0ec &y: 0x16bcab0e8
+30  40
+dibamirza@panther lect07 % make swap
+c++     swap.cpp   -o swap
+swap.cpp:15:25: error: use of undeclared label 'a'
+    cout << "&a: " << &&a << " &b: " << &b << endl;   
+                        ^
+1 error generated.
+make: *** [swap] Error 1
+dibamirza@panther lect07 % make swap
+c++     swap.cpp   -o swap
+swap.cpp:15:23: error: cannot take the address of an rvalue of type 'int *'
+    cout << "&a: " << &(&a) << " &b: " << &b << endl;   
+                      ^ ~~
+1 error generated.
+make: *** [swap] Error 1
+dibamirza@panther lect07 % make swap
+c++     swap.cpp   -o swap
+dibamirza@panther lect07 % ./swap
+&a: 0x16f6b312c &b: 0x16f6b3128
+p = 0x16f6b312c
+&p = 0x16f6b3120
+&x: 0x16f6b30dc &y: 0x16f6b30d8
+30  40
+dibamirza@panther lect07 % make swap
+c++     swap.cpp   -o swap
+swap.cpp:16:10: error: cannot initialize a variable of type 'int *' with an lvalue of type 'int'
+    int* p = a;
+         ^   ~
+1 error generated.
+make: *** [swap] Error 1
+dibamirza@panther lect07 % make swap
+c++     swap.cpp   -o swap
+swap.cpp:17:10: error: cannot initialize a variable of type 'int *' with an lvalue of type 'int'
+    int* p = a;
+         ^   ~
+1 error generated.
+make: *** [swap] Error 1
+dibamirza@panther lect07 % make swap
+c++     swap.cpp   -o swap
+dibamirza@panther lect07 % ./swap   
+&a: 0x16db6712c &b: 0x16db67128
+p = 0x16db6712c
+&p = 0x16db67110
+*p = 30
+&x: 0x16db670cc &y: 0x16db670c8
+30  40
+dibamirza@panther lect07 % make swap
+make: `swap' is up to date.
+dibamirza@panther lect07 % make swap
+c++     swap.cpp   -o swap
+dibamirza@panther lect07 % ./swap   
+&a: 0x16ae2712c &b: 0x16ae27128
+p = 0x16ae2712c
+&p = 0x16ae27110
+*p = 30
+a = 70
+&x: 0x16ae270cc &y: 0x16ae270c8
+70  40
+dibamirza@panther lect07 % make swap
+c++     swap.cpp   -o swap
+swap.cpp:7:9: error: cannot initialize a variable of type 'int' with an lvalue of type 'int *'
+    int tmp = x;
+        ^     ~
+swap.cpp:9:9: error: incompatible integer to pointer conversion assigning to 'int *' from 'int'; take the address with &
+    y = tmp;
+        ^~~
+        &
+2 errors generated.
+make: *** [swap] Error 1
+dibamirza@panther lect07 % make swap
+c++     swap.cpp   -o swap
+dibamirza@panther lect07 % make swap
+make: `swap' is up to date.
+dibamirza@panther lect07 % ./swap   
+&a: 0x16daef12c &b: 0x16daef128
+a = 30
+x: 0x16daef12c y: 0x16daef128
+30  40
+dibamirza@panther lect07 % make swap
+c++     swap.cpp   -o swap
+dibamirza@panther lect07 % ./swap   
+&a: 0x16b6eb12c &b: 0x16b6eb128
+a = 30
+x: 0x16b6eb12c y: 0x16b6eb128
+40  30
+dibamirza@panther lect07 % make swap
+c++     swap.cpp   -o swap
+dibamirza@panther lect07 % ./swap   
+&a: 0x16ba7b12c &b: 0x16ba7b128
+a = 30
+x: 0x0 y: 0x0
+zsh: segmentation fault  ./swap
+dibamirza@panther lect07 % make swap
+c++     swap.cpp   -o swap
+dibamirza@panther lect07 % ./swap   
+&a: 0x16d1ab12c &b: 0x16d1ab128
+a = 30
+x: 0x0 y: 0x0
+zsh: segmentation fault  ./swap
+dibamirza@panther lect07 % make swap
+c++     swap.cpp   -o swap
+dibamirza@panther lect07 % ./swap   
+&a: 0x16ddc312c &b: 0x16ddc3128
+a = 30
+x: 0x16ddc312c y: 0x16ddc3128
+40  30
