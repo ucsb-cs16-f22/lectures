@@ -1,0 +1,221 @@
+dibamirza@panther lect08 % g++ -std=c++11 lect04.cpp 
+lect04.cpp:7:22: error: cannot build range expression with array function parameter 'evens' since parameter with array type 'int []' is treated as pointer type 'int *'
+    for (auto elem : evens){
+                     ^~~~~
+lect04.cpp:5:21: note: declared here
+void printArray(int evens[]){
+                    ^
+1 error generated.
+dibamirza@panther lect08 % g++ -std=c++11 arrays.cpp 
+dibamirza@panther lect08 % ./a.out 
+In main:
+Base address of scores: 0x16d643220
+dibamirza@panther lect08 % g++ -std=c++11 arrays.cpp
+dibamirza@panther lect08 % ./a.out 
+In main:
+Base address of scores: 0x16f547220
+100%                                                                                                                                            
+dibamirza@panther lect08 % g++ -std=c++11 arrays.cpp
+dibamirza@panther lect08 % ./a.out                  
+In main:
+Base address of scores: 0x16baaf220
+Max score is: 100%                                                                                                                              
+dibamirza@panther lect08 % g++ -std=c++11 arrays.cpp
+dibamirza@panther lect08 % ./a.out                  
+In main:
+Base address of scores: 0x16d0f7220
+Max score is: 100
+dibamirza@panther lect08 % g++ -std=c++11 arrays.cpp
+dibamirza@panther lect08 % ./a.out                  
+In main:
+Base address of scores: 0x16f263220
+Max score is: 100
+dibamirza@panther lect08 % g++ -std=c++11 arrays.cpp
+dibamirza@panther lect08 % ./a.out                  
+In main:
+Base address of scores: 0x16b87f220
+Max score is: In maxScore: 
+Size of sc8
+Size of double 8
+100
+dibamirza@panther lect08 % g++ -std=c++11 arrays.cpp
+dibamirza@panther lect08 % ./a.out                  
+In main:
+Base address of scores: 0x16d85b220
+Max score is: In maxScore: 
+Size of sc: 8
+Size of double 8
+100
+dibamirza@panther lect08 % g++ -std=c++11 arrays.cpp
+dibamirza@panther lect08 % ./a.out                  
+In main:
+Base address of scores: 0x16afdf220
+Max score is: In maxScore: 
+Size of sc: 8
+Size of double 8
+100
+dibamirza@panther lect08 % g++ -std=c++11 arrays.cpp
+^[[A%                                                                                       
+dibamirza@panther lect08 % ./a.out                  
+In main:
+Base address of scores: 0x16d29f220
+Size of scores: 32
+Max score is: In maxScore: 
+Size of sc: 8
+Size of double 8
+100
+dibamirza@panther lect08 % g++ -std=c++11 arrays.cpp
+dibamirza@panther lect08 % ./a.out                  
+In main:
+Base address of scores: 0x16b38b220
+Size of scores: 32
+Max score is: In maxScore: 
+Size of sc: 8
+Size of double 8
+In maxScore: 
+sc[0] 95 is at location: 0x16b38b220
+sc[1] 50 is at location: 0x16b38b228
+sc[2] 100 is at location: 0x16b38b230
+sc[3] 75 is at location: 0x16b38b238
+100
+In main: 
+scores[0] 95 is at location: 0x16b38b220
+scores[1] 50 is at location: 0x16b38b228
+scores[2] 100 is at location: 0x16b38b230
+scores[3] 75 is at location: 0x16b38b238
+dibamirza@panther lect08 % g++ -std=c++11 arrays.cpp
+dibamirza@panther lect08 % ./a.out                  
+In main:
+Base address of scores: 0x16aedb220
+Size of scores: 32
+Max score is: In maxScore: 
+Size of sc: 8
+Size of double 8
+In maxScore: 
+sc[0]  95 is at location: 0x16aedb220
+sc[1]  50 is at location: 0x16aedb228
+sc[2] 100 is at location: 0x16aedb230
+sc[3]  75 is at location: 0x16aedb238
+100
+In main: 
+scores[0]  95 is at location: 0x16aedb220
+scores[1]  50 is at location: 0x16aedb228
+scores[2] 100 is at location: 0x16aedb230
+scores[3]  75 is at location: 0x16aedb238
+dibamirza@panther lect08 % g++ -std=c++11 arrays.cpp
+dibamirza@panther lect08 % ./a.out                  
+In main:
+Base address of scores: 0x16cfc3220
+Size of scores: 32
+Max score is: In maxScore: 
+Size of sc: 8
+Size of double 8
+In maxScore: 
+sc[0]  95 is at location: 0x16cfc3220
+sc[1]  50 is at location: 0x16cfc3228
+sc[2] 100 is at location: 0x16cfc3230
+sc[3]  75 is at location: 0x16cfc3238
+100
+In main: 
+scores[0]  95 is at location: 0x16cfc3220
+scores[1]  50 is at location: 0x16cfc3228
+scores[2] 100 is at location: 0x16cfc3230
+scores[3]  75 is at location: 0x16cfc3238
+mat2D[0][0] 10 is at location: 0x16cfc31f0
+mat2D[0][1] 20 is at location: 0x16cfc31f0
+mat2D[1][0] 30 is at location: 0x16cfc3200
+mat2D[1][1] 40 is at location: 0x16cfc3200
+mat2D[2][0] 50 is at location: 0x16cfc3210
+mat2D[2][1] 60 is at location: 0x16cfc3210
+dibamirza@panther lect08 % g++ -std=c++11 arrays.cpp
+dibamirza@panther lect08 % ./a.out                  
+In main:
+Base address of scores: 0x16f57b220
+Size of scores: 32
+Max score is: In maxScore: 
+Size of sc: 8
+Size of double 8
+In maxScore: 
+sc[0]  95 is at location: 0x16f57b220
+sc[1]  50 is at location: 0x16f57b228
+sc[2] 100 is at location: 0x16f57b230
+sc[3]  75 is at location: 0x16f57b238
+100
+In main: 
+scores[0]  95 is at location: 0x16f57b220
+scores[1]  50 is at location: 0x16f57b228
+scores[2] 100 is at location: 0x16f57b230
+scores[3]  75 is at location: 0x16f57b238
+mat2D[0][0] 10 is at location: 0x16f57b1f0
+mat2D[0][1] 20 is at location: 0x16f57b1f8
+mat2D[1][0] 30 is at location: 0x16f57b200
+mat2D[1][1] 40 is at location: 0x16f57b208
+mat2D[2][0] 50 is at location: 0x16f57b210
+mat2D[2][1] 60 is at location: 0x16f57b218
+dibamirza@panther lect08 % g++ -std=c++11 arrays.cpp
+arrays.cpp:27:72: error: subscripted value is not an array, pointer, or vector
+            cout << "mat2D["<< i <<"]["<< j <<"]" << setw(3)<< mat2D[i][j] << " is at location: " << &(mat2D[i][j]) << endl;
+                                                               ~~~~~~~~^~
+arrays.cpp:27:112: error: subscripted value is not an array, pointer, or vector
+            cout << "mat2D["<< i <<"]["<< j <<"]" << setw(3)<< mat2D[i][j] << " is at location: " << &(mat2D[i][j]) << endl;
+                                                                                                       ~~~~~~~~^~
+arrays.cpp:51:5: error: no matching function for call to 'print2D'
+    print2D(mat2D, 3, 2);
+    ^~~~~~~
+arrays.cpp:23:6: note: candidate function not viable: no known conversion from 'double [3][2]' to 'double *' for 1st argument
+void print2D(double* mat2D, int row, int col){
+     ^
+3 errors generated.
+dibamirza@panther lect08 % g++ -std=c++11 arrays.cpp
+arrays.cpp:27:72: error: subscripted value is not an array, pointer, or vector
+            cout << "mat2D["<< i <<"]["<< j <<"]" << setw(3)<< mat2D[i][j] << " is at location: " << &(mat2D[i][j]) << endl;
+                                                               ~~~~~~~~^~
+arrays.cpp:27:112: error: subscripted value is not an array, pointer, or vector
+            cout << "mat2D["<< i <<"]["<< j <<"]" << setw(3)<< mat2D[i][j] << " is at location: " << &(mat2D[i][j]) << endl;
+                                                                                                       ~~~~~~~~^~
+arrays.cpp:37:13: error: array initializer must be an initializer list
+    double* p[3] = mat2D;
+            ^
+arrays.cpp:52:5: error: no matching function for call to 'print2D'
+    print2D(mat2D, 3, 2);
+    ^~~~~~~
+arrays.cpp:23:6: note: candidate function not viable: no known conversion from 'double [3][2]' to 'double *' for 1st argument
+void print2D(double* mat2D, int row, int col){
+     ^
+4 errors generated.
+dibamirza@panther lect08 % g++ -std=c++11 arrays.cpp
+arrays.cpp:37:13: error: array initializer must be an initializer list
+    double* p[3] = mat2D;
+            ^
+1 error generated.
+dibamirza@panther lect08 % g++ -std=c++11 arrays.cpp
+arrays.cpp:37:14: error: cannot initialize a variable of type 'double (*)[3]' with an lvalue of type 'double [3][2]'
+    double(* p)[3] = mat2D;
+             ^       ~~~~~
+1 error generated.
+dibamirza@panther lect08 % g++ -std=c++11 arrays.cpp
+dibamirza@panther lect08 % g++ -std=c++11 arrays.cpp
+dibamirza@panther lect08 % ./a.out 
+In main:
+Base address of scores: 0x16b0af220
+Size of scores: 32
+Max score is: In maxScore: 
+Size of sc: 8
+Size of double 8
+In maxScore: 
+sc[0]  95 is at location: 0x16b0af220
+sc[1]  50 is at location: 0x16b0af228
+sc[2] 100 is at location: 0x16b0af230
+sc[3]  75 is at location: 0x16b0af238
+100
+In main: 
+scores[0]  95 is at location: 0x16b0af220
+scores[1]  50 is at location: 0x16b0af228
+scores[2] 100 is at location: 0x16b0af230
+scores[3]  75 is at location: 0x16b0af238
+mat2D[0][0] 10 is at location: 0x16b0af1f0
+mat2D[0][1] 20 is at location: 0x16b0af1f8
+mat2D[1][0] 30 is at location: 0x16b0af200
+mat2D[1][1] 40 is at location: 0x16b0af208
+mat2D[2][0] 50 is at location: 0x16b0af210
+mat2D[2][1] 60 is at location: 0x16b0af218
