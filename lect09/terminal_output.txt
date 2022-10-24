@@ -1,0 +1,352 @@
+dibamirza@ResNet-38-67 lect09 % g++ -std=c++11 vectors.cpp 
+dibamirza@ResNet-38-67 lect09 % ./a.out 
+In main:
+Max score is: In maxScore: 
+In maxScore: 
+sc[0]  95 is at location: 0x157606800
+sc[1]  50 is at location: 0x157606808
+sc[2] 100 is at location: 0x157606810
+sc[3]  75 is at location: 0x157606818
+100
+In main: 
+scores[0]  95 is at location: 0x1576067e0
+scores[1]  50 is at location: 0x1576067e8
+scores[2] 100 is at location: 0x1576067f0
+scores[3]  75 is at location: 0x1576067f8
+dibamirza@ResNet-38-67 lect09 % cd ../lect08
+dibamirza@ResNet-38-67 lect08 % ls
+a.out			lect04.cpp
+arrays.cpp		terminal_output.txt
+dibamirza@ResNet-38-67 lect08 % g++ -std=c++11 arrays.cpp 
+dibamirza@ResNet-38-67 lect08 % ./a.out 
+In main:
+Base address of scores: 0x16d2f3460
+Size of scores: 32
+Max score is: In maxScore: 
+Size of sc: 8
+Size of double 8
+In maxScore: 
+sc[0]  95 is at location: 0x16d2f3460
+sc[1]  50 is at location: 0x16d2f3468
+sc[2] 100 is at location: 0x16d2f3470
+sc[3]  75 is at location: 0x16d2f3478
+100
+In main: 
+scores[0]  95 is at location: 0x16d2f3460
+scores[1]  50 is at location: 0x16d2f3468
+scores[2] 100 is at location: 0x16d2f3470
+scores[3]  75 is at location: 0x16d2f3478
+mat2D[0][0] 10 is at location: 0x16d2f3430
+mat2D[0][1] 20 is at location: 0x16d2f3438
+mat2D[1][0] 30 is at location: 0x16d2f3440
+mat2D[1][1] 40 is at location: 0x16d2f3448
+mat2D[2][0] 50 is at location: 0x16d2f3450
+mat2D[2][1] 60 is at location: 0x16d2f3458
+ In print2D
+mat2D[0][0] 10 is at location: 0x16d2f3430
+mat2D[0][1] 20 is at location: 0x16d2f3438
+mat2D[1][0] 30 is at location: 0x16d2f3440
+mat2D[1][1] 40 is at location: 0x16d2f3448
+mat2D[2][0] 50 is at location: 0x16d2f3450
+mat2D[2][1] 60 is at location: 0x16d2f3458
+dibamirza@ResNet-38-67 lect08 % cd ../lect09 
+dibamirza@ResNet-38-67 lect09 % ls
+a.out		ascii.cpp	swap.cpp	vectors.cpp
+dibamirza@ResNet-38-67 lect09 % g++ -std=c++11 arrays.cpp
+clang: error: no such file or directory: 'arrays.cpp'
+clang: error: no input files
+dibamirza@ResNet-38-67 lect09 % g++ -std=c++11 vectors.cpp
+dibamirza@ResNet-38-67 lect09 % clear
+
+dibamirza@ResNet-38-67 lect09 % ./a.out 
+In main:
+Max score is: In maxScore: 
+In maxScore: 
+sc[0]  95 is at location: 0x15ae06800
+sc[1]  50 is at location: 0x15ae06808
+sc[2] 100 is at location: 0x15ae06810
+sc[3]  75 is at location: 0x15ae06818
+100
+In main: 
+scores[0]  95 is at location: 0x15ae067e0
+scores[1]  50 is at location: 0x15ae067e8
+scores[2] 100 is at location: 0x15ae067f0
+scores[3]  75 is at location: 0x15ae067f8
+dibamirza@ResNet-38-67 lect09 % g++ -std=c++11 vectors.cpp
+vectors.cpp:52:5: error: no matching function for call to 'print2D'
+    print2D(mat2D, 3, 2);
+    ^~~~~~~
+vectors.cpp:24:6: note: candidate function not viable: requires single argument 'mat2D', but 3 arguments were provided
+void print2D(vector<vector<double>> mat2D){
+     ^
+1 error generated.
+dibamirza@ResNet-38-67 lect09 % g++ -std=c++11 vectors.cpp
+dibamirza@ResNet-38-67 lect09 % clear
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+dibamirza@ResNet-38-67 lect09 % ./a.out 
+In main:
+Max score is: In maxScore: 
+In maxScore: 
+sc[0]  95 is at location: 0x11fe06810
+sc[1]  50 is at location: 0x11fe06818
+sc[2] 100 is at location: 0x11fe06820
+sc[3]  75 is at location: 0x11fe06828
+100
+In main: 
+scores[0]  95 is at location: 0x11fe067e0
+scores[1]  50 is at location: 0x11fe067e8
+scores[2] 100 is at location: 0x11fe067f0
+scores[3]  75 is at location: 0x11fe067f8
+mat2D[0][0] 10 is at location: 0x11fe06880
+mat2D[0][1] 20 is at location: 0x11fe06888
+mat2D[1][0] 30 is at location: 0x11fe06890
+mat2D[1][1] 40 is at location: 0x11fe06898
+mat2D[2][0] 50 is at location: 0x11fe068a0
+mat2D[2][1] 60 is at location: 0x11fe068a8
+ In print2D
+mat2D[0][0] 10 is at location: 0x11fe06800
+mat2D[0][1] 20 is at location: 0x11fe06808
+mat2D[1][0] 30 is at location: 0x11fe069a0
+mat2D[1][1] 40 is at location: 0x11fe069a8
+mat2D[2][0] 50 is at location: 0x11fe069b0
+mat2D[2][1] 60 is at location: 0x11fe069b8
+dibamirza@ResNet-38-67 lect09 % g++ -std=c++11 vectors.cpp
+dibamirza@ResNet-38-67 lect09 % clear                     
+
+
+
+
+
+
+
+
+
+
+dibamirza@ResNet-38-67 lect09 % ./a.out                   
+In main:
+Max score is: In maxScore: 
+In maxScore: 
+sc[0]  95 is at location: 0x122e06810
+sc[1]  50 is at location: 0x122e06818
+sc[2] 100 is at location: 0x122e06820
+sc[3]  75 is at location: 0x122e06828
+100
+In main: 
+scores[0]  95 is at location: 0x122e067e0
+scores[1]  50 is at location: 0x122e067e8
+scores[2] 100 is at location: 0x122e067f0
+scores[3]  75 is at location: 0x122e067f8
+In main, mat2D:
+mat2D[0][0] 10 is at location: 0x122e06880
+mat2D[0][1] 20 is at location: 0x122e06888
+mat2D[1][0] 30 is at location: 0x122e06890
+mat2D[1][1] 40 is at location: 0x122e06898
+mat2D[2][0] 50 is at location: 0x122e068a0
+mat2D[2][1] 60 is at location: 0x122e068a8
+ In print2D
+mat2D[0][0] 10 is at location: 0x122e06800
+mat2D[0][1] 20 is at location: 0x122e06808
+mat2D[1][0] 30 is at location: 0x122e069a0
+mat2D[1][1] 40 is at location: 0x122e069a8
+mat2D[2][0] 50 is at location: 0x122e069b0
+mat2D[2][1] 60 is at location: 0x122e069b8
+dibamirza@ResNet-38-67 lect09 % clear
+
+
+
+
+
+
+
+
+
+
+dibamirza@ResNet-38-67 lect09 % g++ -std=c++11 vectors.cpp
+dibamirza@ResNet-38-67 lect09 % ./a.out 
+In main:
+Max score is: In maxScore: 
+In maxScore: 
+sc[0]  95 is at location: 0x11c704160
+sc[1]  50 is at location: 0x11c704168
+sc[2] 100 is at location: 0x11c704170
+sc[3]  75 is at location: 0x11c704178
+100
+In main: 
+scores[0]  95 is at location: 0x11c704160
+scores[1]  50 is at location: 0x11c704168
+scores[2] 100 is at location: 0x11c704170
+scores[3]  75 is at location: 0x11c704178
+In main, mat2D:
+mat2D[0][0] 10 is at location: 0x11c704200
+mat2D[0][1] 20 is at location: 0x11c704208
+mat2D[1][0] 30 is at location: 0x11c704210
+mat2D[1][1] 40 is at location: 0x11c704218
+mat2D[2][0] 50 is at location: 0x11c704220
+mat2D[2][1] 60 is at location: 0x11c704228
+ In print2D
+mat2D[0][0] 10 is at location: 0x11c704200
+mat2D[0][1] 20 is at location: 0x11c704208
+mat2D[1][0] 30 is at location: 0x11c704210
+mat2D[1][1] 40 is at location: 0x11c704218
+mat2D[2][0] 50 is at location: 0x11c704220
+mat2D[2][1] 60 is at location: 0x11c704228
+dibamirza@ResNet-38-67 lect09 % g++ -std=c++11 vectors.cpp
+dibamirza@ResNet-38-67 lect09 % clear
+
+
+
+
+
+
+
+
+dibamirza@ResNet-38-67 lect09 % ./a.out                   
+In main:
+Max score is: In maxScore: 
+In maxScore: 
+Element  95 is at location: 0x16b8631b8
+Element  50 is at location: 0x16b8631b8
+Element 100 is at location: 0x16b8631b8
+Element  75 is at location: 0x16b8631b8
+100
+In main: 
+scores[0]  95 is at location: 0x129f059f0
+scores[1]  50 is at location: 0x129f059f8
+scores[2] 100 is at location: 0x129f05a00
+scores[3]  75 is at location: 0x129f05a08
+In main, mat2D:
+mat2D[0][0] 10 is at location: 0x129f05a90
+mat2D[0][1] 20 is at location: 0x129f05a98
+mat2D[1][0] 30 is at location: 0x129f05aa0
+mat2D[1][1] 40 is at location: 0x129f05aa8
+mat2D[2][0] 50 is at location: 0x129f05ab0
+mat2D[2][1] 60 is at location: 0x129f05ab8
+ In print2D
+Element:  10 is at location: 0x16b863198
+Element:  20 is at location: 0x16b863198
+Element:  30 is at location: 0x16b863198
+Element:  40 is at location: 0x16b863198
+Element:  50 is at location: 0x16b863198
+Element:  60 is at location: 0x16b863198
+dibamirza@ResNet-38-67 lect09 % g++ -std=c++11 vectors.cpp
+dibamirza@ResNet-38-67 lect09 % ./a.out                   
+In main:
+Max score is: In maxScore: 
+In maxScore: 
+Element  95 is at location: 0x12e6067a0
+Element  50 is at location: 0x12e6067a8
+Element 100 is at location: 0x12e6067b0
+Element  75 is at location: 0x12e6067b8
+100
+In main: 
+scores[0]  95 is at location: 0x12e6067a0
+scores[1]  50 is at location: 0x12e6067a8
+scores[2] 100 is at location: 0x12e6067b0
+scores[3]  75 is at location: 0x12e6067b8
+In main, mat2D:
+mat2D[0][0] 10 is at location: 0x12e606840
+mat2D[0][1] 20 is at location: 0x12e606848
+mat2D[1][0] 30 is at location: 0x12e606850
+mat2D[1][1] 40 is at location: 0x12e606858
+mat2D[2][0] 50 is at location: 0x12e606860
+mat2D[2][1] 60 is at location: 0x12e606868
+ In print2D
+Element:  10 is at location: 0x12e606840
+Element:  20 is at location: 0x12e606848
+Element:  30 is at location: 0x12e606850
+Element:  40 is at location: 0x12e606858
+Element:  50 is at location: 0x12e606860
+Element:  60 is at location: 0x12e606868
+dibamirza@ResNet-38-67 lect09 % clear
+
+dibamirza@ResNet-38-67 lect09 % ls
+a.out		ascii.cpp	swap.cpp	vectors.cpp
+dibamirza@ResNet-38-67 lect09 % g++ -std=c++11 vectors.cpp
+dibamirza@ResNet-38-67 lect09 % ./a.out                   
+In main:
+Max score is: In maxScore: 
+In maxScore: 
+Element  95 is at location: 0x128e067e0
+Element  50 is at location: 0x128e067e8
+Element 100 is at location: 0x128e067f0
+Element  75 is at location: 0x128e067f8
+100
+In main: 
+scores[0]  95 is at location: 0x128e067e0
+scores[1]  50 is at location: 0x128e067e8
+scores[2] 100 is at location: 0x128e067f0
+scores[3]  75 is at location: 0x128e067f8
+In main, mat2D:
+mat2D[0][0] 10 is at location: 0x128e06880
+mat2D[0][1] 20 is at location: 0x128e06888
+mat2D[1][0] 30 is at location: 0x128e06890
+mat2D[1][1] 40 is at location: 0x128e06898
+mat2D[2][0] 50 is at location: 0x128e068a0
+mat2D[2][1] 60 is at location: 0x128e068a8
+ In print2D
+Element:  10 is at location: 0x128e06880
+Element:  20 is at location: 0x128e06888
+Element:  30 is at location: 0x128e06890
+Element:  40 is at location: 0x128e06898
+Element:  50 is at location: 0x128e068a0
+Element:  60 is at location: 0x128e068a8
+a
+dibamirza@ResNet-38-67 lect09 % g++ -std=c++11 cstrings.cpp
+cstrings.cpp:35:45: error: excess elements in array initializer
+    char somearray[4]= {'U', 'C', 'S', 'B', '\0'}; //char crray
+                                            ^~~~
+1 error generated.
+dibamirza@ResNet-38-67 lect09 % g++ -std=c++11 cstrings.cpp
+dibamirza@ResNet-38-67 lect09 % clear
+
+dibamirza@ResNet-38-67 lect09 % ./a.out 
+zsh: segmentation fault  ./a.out
+dibamirza@ResNet-38-67 lect09 % ./a.out hello
+hello
+
+dibamirza@ResNet-38-67 lect09 % ./a.out hello
+hello
+
+dibamirza@ResNet-38-67 lect09 % g++ -std=c++11 cstrings.cpp
+dibamirza@ResNet-38-67 lect09 % ./a.out hello              
+0x16ae5f740
+
+dibamirza@ResNet-38-67 lect09 % g++ -std=c++11 cstrings.cpp
+dibamirza@ResNet-38-67 lect09 % ./a.out hello              
+0x16b56b740
+
+4
+dibamirza@ResNet-38-67 lect09 % git add .
+dibamirza@ResNet-38-67 lect09 % git commit -m "lect09"
+[main c043946] lect09
+ 4 files changed, 159 insertions(+)
+ create mode 100644 lect09/ascii.cpp
+ create mode 100644 lect09/cstrings.cpp
+ create mode 100644 lect09/swap.cpp
+ create mode 100644 lect09/vectors.cpp
+dibamirza@ResNet-38-67 lect09 % git push
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (7/7), 1.77 KiB | 1.77 MiB/s, done.
+Total 7 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+To github.com:ucsb-cs16-f22/lectures.git
+   b1d50bc..c043946  main -> main
+dibamirza@ResNet-38-67 lect09 % 
+
+
