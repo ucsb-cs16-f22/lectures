@@ -1,0 +1,189 @@
+dibamirza@ResNet-33-194 lect10 % ls
+a.out			demoFiles01.cpp
+character_stats.csv	small_dataset.csv
+dibamirza@ResNet-33-194 lect10 % lsl -al
+zsh: command not found: lsl
+dibamirza@ResNet-33-194 lect10 % ls -al
+total 240
+drwxr-xr-x   6 dibamirza  staff    192 Oct 26 11:24 .
+drwxr-xr-x  15 dibamirza  staff    480 Oct 26 09:26 ..
+-rwxr-xr-x   1 dibamirza  staff  89122 Oct 26 11:24 a.out
+-rw-r--r--@  1 dibamirza  staff  21925 Oct 26 09:26 character_stats.csv
+-rw-r--r--   1 dibamirza  staff    868 Oct 26 11:23 demoFiles01.cpp
+-rw-r--r--   1 dibamirza  staff    330 Oct 26 09:26 small_dataset.csv
+dibamirza@ResNet-33-194 lect10 % chmod 000  small_dataset.csv 
+dibamirza@ResNet-33-194 lect10 % ls -al
+total 240
+drwxr-xr-x   6 dibamirza  staff    192 Oct 26 11:24 .
+drwxr-xr-x  15 dibamirza  staff    480 Oct 26 09:26 ..
+-rwxr-xr-x   1 dibamirza  staff  89122 Oct 26 11:24 a.out
+-rw-r--r--@  1 dibamirza  staff  21925 Oct 26 09:26 character_stats.csv
+-rw-r--r--   1 dibamirza  staff    868 Oct 26 11:23 demoFiles01.cpp
+----------   1 dibamirza  staff    330 Oct 26 09:26 small_dataset.csv
+dibamirza@ResNet-33-194 lect10 % ./a.out small_dataset.csv   
+Open failed 
+dibamirza@ResNet-33-194 lect10 % chmod 755 small_dataset.csv 
+dibamirza@ResNet-33-194 lect10 % ls -al
+total 240
+drwxr-xr-x   6 dibamirza  staff    192 Oct 26 11:24 .
+drwxr-xr-x  15 dibamirza  staff    480 Oct 26 09:26 ..
+-rwxr-xr-x   1 dibamirza  staff  89122 Oct 26 11:24 a.out
+-rw-r--r--@  1 dibamirza  staff  21925 Oct 26 09:26 character_stats.csv
+-rw-r--r--   1 dibamirza  staff    868 Oct 26 11:23 demoFiles01.cpp
+-rwxr-xr-x   1 dibamirza  staff    330 Oct 26 09:26 small_dataset.csv
+dibamirza@ResNet-33-194 lect10 % clear
+
+
+dibamirza@ResNet-33-194 lect10 % g++ -std=c++11 demoFiles02.cpp
+dibamirza@ResNet-33-194 lect10 % ./a.out 
+Spiderman vs Catwoman 
+Is smarter ? 1
+dibamirza@ResNet-33-194 lect10 % ./a.out
+Spiderman vs Catwoman 
+Is smarter ? 0
+dibamirza@ResNet-33-194 lect10 % ./a.out
+Spiderman vs Catwoman 
+Is smarter ? 1
+dibamirza@ResNet-33-194 lect10 % ./a.out
+Spiderman vs Catwoman 
+Is smarter ? 1
+dibamirza@ResNet-33-194 lect10 % ./a.out
+Spiderman vs Catwoman 
+Is smarter ? 1
+dibamirza@ResNet-33-194 lect10 % ./a.out
+Spiderman vs Catwoman 
+Is smarter ? 1
+dibamirza@ResNet-33-194 lect10 % ./a.out
+Spiderman vs Catwoman 
+Is smarter ? 1
+dibamirza@ResNet-33-194 lect10 % ./a.out
+Spiderman vs Catwoman 
+Is smarter ? 1
+dibamirza@ResNet-33-194 lect10 % clear
+
+
+
+
+
+
+
+
+
+
+
+dibamirza@ResNet-33-194 lect10 % ./a.out
+Spiderman vs Catwoman 
+Is smarter ? 1
+dibamirza@ResNet-33-194 lect10 % g++ -std=c++11 demoFiles02.cpp
+dibamirza@ResNet-33-194 lect10 % ./a.out
+Spiderman vs Catwoman 
+Is smarter ? true
+dibamirza@ResNet-33-194 lect10 % ./a.out
+Spiderman vs Catwoman 
+Is smarter ? true
+dibamirza@ResNet-33-194 lect10 % ./a.out
+Spiderman vs Catwoman 
+Is smarter ? true
+dibamirza@ResNet-33-194 lect10 % ./a.out
+Spiderman vs Catwoman 
+Is smarter ? true
+dibamirza@ResNet-33-194 lect10 % ./a.out
+Spiderman vs Catwoman 
+Is smarter ? true
+dibamirza@ResNet-33-194 lect10 % ./a.out
+Spiderman vs Catwoman 
+Is smarter ? true
+dibamirza@ResNet-33-194 lect10 % ./a.out
+Spiderman vs Catwoman 
+Is smarter ? true
+dibamirza@ResNet-33-194 lect10 % ./a.out
+Spiderman vs Catwoman 
+Is smarter ? true
+dibamirza@ResNet-33-194 lect10 % ./a.out
+Spiderman vs Catwoman 
+Is smarter ? true
+dibamirza@ResNet-33-194 lect10 % ./a.out
+Spiderman vs Catwoman 
+Is smarter ? true
+dibamirza@ResNet-33-194 lect10 % ./a.out
+Spiderman vs Catwoman 
+Is smarter ? true
+dibamirza@ResNet-33-194 lect10 % g++ demoFiles02.cpp 
+dibamirza@ResNet-33-194 lect10 % ./a.out 
+Spiderman vs Catwoman 
+Is smarter ? true
+Is stronger ? true
+Is smarter ? false
+dibamirza@ResNet-33-194 lect10 % clear
+
+dibamirza@ResNet-33-194 lect10 % ./a.out
+Spiderman vs Catwoman 
+Is smarter ? true
+Is stronger ? true
+Is smarter ? false
+dibamirza@ResNet-33-194 lect10 % ./a.out
+Spiderman vs Catwoman 
+Is smarter ? true
+Is stronger ? false
+Is smarter ? false
+dibamirza@ResNet-33-194 lect10 % ./a.out
+Spiderman vs Catwoman 
+Is smarter ? true
+Is stronger ? true
+Is smarter ? false
+dibamirza@ResNet-33-194 lect10 % ./a.out
+Spiderman vs Catwoman 
+Is smarter ? true
+Is stronger ? false
+Is smarter ? false
+dibamirza@ResNet-33-194 lect10 % ./a.out
+Spiderman vs Catwoman 
+Is smarter ? true
+Is stronger ? false
+Is smarter ? false
+dibamirza@ResNet-33-194 lect10 % g++ demoFiles02.cpp
+demoFiles02.cpp:23:20: error: cannot assign to variable 'a' with const-qualified type 'const superhero &'
+    a.intelligence = 0;
+    ~~~~~~~~~~~~~~ ^
+demoFiles02.cpp:22:34: note: variable 'a' declared const here
+bool isStronger(const superhero& a, const superhero& b){ 
+                ~~~~~~~~~~~~~~~~~^
+1 error generated.
+dibamirza@ResNet-33-194 lect10 % clear              
+
+
+
+dibamirza@ResNet-33-194 lect10 % g++ demoFiles02.cpp
+dibamirza@ResNet-33-194 lect10 % ./a.out            
+Spiderman vs Catwoman 
+Is smarter ? true
+Is stronger ? false
+Is smarter ? true
+Is faster ? true
+dibamirza@ResNet-33-194 lect10 % g++ demoFiles02.cpp
+dibamirza@ResNet-33-194 lect10 % ./a.out            
+Spiderman vs Catwoman 
+Is smarter ? true
+Is stronger ? true
+Is smarter ? true
+Is faster ? true
+[ Name: Spiderman, Intelligence:  88, Strength:  50, Speed:  100]
+[ Name: Catwoman, Intelligence:  30, Strength:  8, Speed:  91]
+dibamirza@ResNet-33-194 lect10 % ./a.out
+Spiderman vs Catwoman 
+Is smarter ? true
+Is stronger ? false
+Is smarter ? true
+Is faster ? true
+[ Name: Spiderman, Intelligence:  88, Strength:  50, Speed:  100]
+[ Name: Catwoman, Intelligence:  77, Strength:  96, Speed:  72]
+dibamirza@ResNet-33-194 lect10 % g++ demoFiles02.cpp
+dibamirza@ResNet-33-194 lect10 % ./a.out            
+Spiderman vs Catwoman 
+Is smarter ? true
+Is stronger ? false
+Is smarter ? true
+Is faster ? true
+[ Name: Spiderman, Intelligence:  88, Strength:  50, Speed:  100]
+
+[ Name: Catwoman, Intelligence:  87, Strength:  78, Speed:  81]

@@ -1,6 +1,6 @@
-// shapes.cpp
-// lecture 7: 10.17.22
-// Topics: Data Representation
+// ascii.cpp
+// lecture 11
+// Topics: Review of Data Representation
 
 #include <iostream>
 using namespace std;
@@ -13,8 +13,8 @@ int main(){
     char digit = '1';
     string dig = "1";
     // What is the output?
-    cout << a << endl;
-    cout << b << endl;
+    cout << a << endl; 
+    cout << b << endl; 
     cout << c << endl;
     cout << d << endl;
     cout << "int(digit): " << int(digit) <<endl;

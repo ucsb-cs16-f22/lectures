@@ -50,7 +50,7 @@ int main(int argc, char const *argv[])
             cout << "mat2D["<< i <<"]["<< j <<"]" << setw(3)<< mat2D[i][j] << " is at location: " << &(mat2D[i][j]) << endl;
         }
     }
-   // print2D(mat2D, 3, 2);
+    print2D(mat2D, 3, 2);
 
     return 0;
 }

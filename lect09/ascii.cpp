@@ -13,8 +13,8 @@ int main(){
     char digit = '1';
     string dig = "1";
     // What is the output?
-    cout << a << endl;
-    cout << b << endl;
+    cout << a << endl; 
+    cout << b << endl; 
     cout << c << endl;
     cout << d << endl;
     cout << "int(digit): " << int(digit) <<endl;

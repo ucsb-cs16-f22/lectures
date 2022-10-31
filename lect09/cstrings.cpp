@@ -33,7 +33,7 @@ cout <<" In print2D"<<endl;
 
 int main(int argc, char const **argv)
 {
-    char somearray[4]= {'U', 'C', 'S', 'B'}; //char crray
+    char somearray[]= {'U', 'C', 'S', 'B', '\0'}; //char crray
     cout << (int*)(argv[1]) <<endl;
     char sb[] = "UCSB"; // C string
     string s = "UCSB";
