@@ -39,23 +39,23 @@ string toString(superhero s){
 }
 
 
-int main(int argc, char const *argv[])
-{
-    srand(time(NULL));
-    superhero s1 = {"Spiderman", 88, 50, 100};
-    superhero s2 = {"Catwoman", rand() % 100 + 1, rand() % 100 + 1, rand() % 100 + 1};
+// int main(int argc, char const *argv[])
+// {
+//     srand(time(NULL));
+//     superhero s1 = {"Spiderman", 88, 50, 100};
+//     superhero s2 = {"Catwoman", rand() % 100 + 1, rand() % 100 + 1, rand() % 100 + 1};
 
-    cout << "Spiderman vs Catwoman " << endl;
-    cout << "Is smarter ? "  << std::boolalpha << isSmarter(s1, s2 ) << endl; // pass by value
-    cout << "Is stronger ? " << std::boolalpha << isStronger(s1, s2) << endl; // pass by reference
-    cout << "Is smarter ? "  << std::boolalpha << isSmarter(s1, s2 ) << endl; // pass by value
-    cout << "Is faster ? "   << std::boolalpha << isFaster(&s1, &s2 ) << endl; // pass by address
+//     cout << "Spiderman vs Catwoman " << endl;
+//     cout << "Is smarter ? "  << std::boolalpha << isSmarter(s1, s2 ) << endl; // pass by value
+//     cout << "Is stronger ? " << std::boolalpha << isStronger(s1, s2) << endl; // pass by reference
+//     cout << "Is smarter ? "  << std::boolalpha << isSmarter(s1, s2 ) << endl; // pass by value
+//     cout << "Is faster ? "   << std::boolalpha << isFaster(&s1, &s2 ) << endl; // pass by address
 
-    cout << toString(s1) << endl;
-    cout << toString(s2) << endl;
+//     cout << toString(s1) << endl;
+//     cout << toString(s2) << endl;
 
 
-    return 0;
-}
+//     return 0;
+// }
 
 
