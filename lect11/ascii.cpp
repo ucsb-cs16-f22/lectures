@@ -20,8 +20,7 @@ int main(){
     cout << b << endl; // 'a'
     cout << c << endl; // 10
     cout << d << endl; // 161
-    cout << hex << int(e) << endl; // 0xffffffff
-                                   //            
+    cout << hex << int(e) << endl; // 0xffffffff           
     cout << "int(digit): " << int(digit) <<endl; //A. 1  B. something else
     cout << "stoi(digit): " << stoi(dig) << endl;
 

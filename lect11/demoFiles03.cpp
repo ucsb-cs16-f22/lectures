@@ -1,5 +1,4 @@
-// demoFiles02.cpp
-// Structs to declare custom type
+// demoFiles03.cpp
 #include<iostream>
 #include<time.h>
 #include<sstream>
