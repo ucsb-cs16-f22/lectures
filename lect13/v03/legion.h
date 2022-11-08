@@ -11,16 +11,22 @@
 
 using namespace std;
 
- void pick_teams(vector<superhero>& heros,  vector <superhero>& legion1,  vector <superhero>& legion2){   
+struct legion
+{
+    string name;
+    vector<superhero> heros;
+    vector<int> powers; // {smarts, strength, speed}
+    void add_hero(superhero h) { heros.push_back(h); }
+};
+
+ void pick_teams(vector<superhero>& heros,  legion& legion1,  legion& legion2){   
     for(int round = 1 ; round < 6; round++){  
         int i = rand()% heros.size()/2;
         int j = heros.size()/2 + rand()% heros.size()/2;
-        //cout << heros[i].name << " vs. " << heros[j].name << endl;
-        legion1.push_back(heros[i]);
-        legion2.push_back(heros[j]);
+        legion1.add_hero(heros[i]);
+        legion2.add_hero(heros[j]);
     }
  }
-
 
 vector<int> combine_powers(vector<superhero>& legion){
     vector<int> result = {0, 0, 0};
@@ -43,8 +49,6 @@ void  print_stats(string legion_name, vector<superhero> legion, vector<int> legi
          << setw(3) << legion_powers[1] << ", "
          << setw(3) << legion_powers[2]
          << endl << endl;
-     
-
 }
 
 void declare_winner(string legion1_name, vector<int>& legion1_powers, string legion2_name, vector<int>& legion2_powers){
