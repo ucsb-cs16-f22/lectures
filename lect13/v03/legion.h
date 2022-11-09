@@ -14,9 +14,9 @@ using namespace std;
 struct legion
 {
     string name;
-    vector<superhero> heros;
+    vector<superhero> team;
     vector<int> powers; // {smarts, strength, speed}
-    void add_hero(superhero h) { heros.push_back(h); }
+    void add_hero(superhero h) { team.push_back(h); }
 };
 
  void pick_teams(vector<superhero>& heros,  legion& legion1,  legion& legion2){   
