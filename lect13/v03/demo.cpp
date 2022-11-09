@@ -31,21 +31,20 @@ int main(int argc, char const *argv[])
     ifs.close();
 
     srand(time(NULL));
-    vector <superhero> legion1;
-    vector <superhero> legion2;
-    string legion1_name = "Angels" ;
-    string legion2_name = "Demons";
+    legion legion1 = {"Angels", {}, vector<int>(3,0)}; //direct initialization
+    legion legion2 = {"Demons", {}, vector<int>(3,0)};
+
     // take turns picking members of each legion
     pick_teams(heros, legion1, legion2);    
    
     // Get combined powers for each legion
-    vector<int> legion1_powers = combine_powers(legion1);
-    vector<int> legion2_powers = combine_powers(legion2);
+    legion1.combine_powers();
+    legion2.combine_powers();
 
-    print_stats(legion1_name, legion1, legion1_powers);
-    print_stats(legion2_name, legion2, legion2_powers);
+    legion1.print_stats();
+    legion2.print_stats();
 
-    declare_winner(legion1_name, legion1_powers,  legion2_name, legion2_powers);
+    declare_winner(legion1, legion2);
 
     return 0;
 }
