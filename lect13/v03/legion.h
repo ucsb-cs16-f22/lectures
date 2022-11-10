@@ -15,11 +15,18 @@ struct legion
 {
     string name;
     vector<superhero> team;
-    vector<int> powers; // combined {smarts, strength, speed} of all team members
-    void add_hero(superhero h) { team.push_back(h); } //inline 
+    vector<int> powers; //  {smarts, strength, speed}
     void combine_powers();
     void print_stats();
 };
+
+void legion::add_hero(superhero h) { 
+    team.push_back(h); 
+    powers[0]+= h.intelligence;
+    powers[1]+= h.strength;
+    powers[2]+= h.speed;
+
+} 
 
  void pick_teams(vector<superhero>& heros,  legion& legion1,  legion& legion2){   
     for(int round = 1 ; round < 6; round++){  

@@ -13,21 +13,23 @@ using namespace std;
 int main(int argc, char const *argv[])
 {
 
-    if(argc != 2){
-        cerr << "Usage is "<< argv[0] << " filename" << endl;
+    if (argc != 2)
+    {
+        cerr << "Usage is " << argv[0] << " filename" << endl;
         return 1;
     }
 
     ifstream ifs(argv[1]); // open file for reading
 
-    if(!ifs){ //or if(ifs.fail())
-        cerr << "Open failed "<<endl;
+    if (!ifs)
+    { // or if(ifs.fail())
+        cerr << "Open failed " << endl;
         return 1;
     }
-    
+
     vector<superhero> heros;
     read_data(ifs, heros);
-    //cout << "No. of superheros is "<< heros.size() << endl << endl;;
+    // cout << "No. of superheros is "<< heros.size() << endl << endl;;
     ifs.close();
 
     srand(time(NULL));
@@ -36,10 +38,9 @@ int main(int argc, char const *argv[])
     // legion legion1 = {"Angels"}; //direct initialization
     // legion legion2 = {"Demons"};
 
-
     // take turns picking members of each legion
-    pick_teams(heros, legion1, legion2);    
-   
+    pick_teams(heros, legion1, legion2);
+
     legion1.add_hero(heros[0]);
     legion1.print_stats();
     legion2.print_stats();
@@ -48,5 +49,3 @@ int main(int argc, char const *argv[])
 
     return 0;
 }
-
-

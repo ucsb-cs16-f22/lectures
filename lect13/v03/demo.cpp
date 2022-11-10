@@ -33,14 +33,14 @@ int main(int argc, char const *argv[])
     srand(time(NULL));
     legion legion1 = {"Angels", {}, vector<int>(3,0)}; //direct initialization
     legion legion2 = {"Demons", {}, vector<int>(3,0)};
+    // legion legion1 = {"Angels"}; //direct initialization
+    // legion legion2 = {"Demons"};
+
 
     // take turns picking members of each legion
     pick_teams(heros, legion1, legion2);    
    
-    // Get combined powers for each legion
-    legion1.combine_powers();
-    legion2.combine_powers();
-
+    legion1.add_hero(heros[0]);
     legion1.print_stats();
     legion2.print_stats();
 
