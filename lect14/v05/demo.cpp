@@ -33,6 +33,9 @@ int main(int argc, char const *argv[])
     ifs.close();
 
     srand(time(NULL));
+    // legion legion1;
+    // legion legion2;
+    // legion l1;
     legion legion1("Angels");
     legion legion2("Demons");
     // legion legion1 = {"Angels"}; //direct initialization

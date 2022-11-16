@@ -16,28 +16,15 @@ struct superhero{
     int speed;
 };
 
-bool is_smarter(const superhero& a, const superhero& b){ 
 
-    return a.intelligence > b.intelligence;
-}
+bool is_smarter(const superhero& a, const superhero& b);
 
-bool is_smarter(int a, int b){
-    return a > b;
-}
+bool is_smarter(int a, int b);
 
-bool is_stronger(const superhero& a, const superhero& b){ 
-    return a.strength < b.strength;
-}
+bool is_stronger(const superhero& a, const superhero& b);
 
-bool is_faster(const superhero& a, const superhero& b){ 
-   return a.speed > b.speed;
-}
+bool is_faster(const superhero& a, const superhero& b);
 
-string to_string(superhero s){
-    stringstream ss;
-    ss << setw(20) <<s.name << ": [" << setw(3)<< s.intelligence 
-       << ", " << setw(3)<< s.strength <<", " << setw(3)<< s.speed << "]" <<endl;
-    return ss.str();
-}
+string to_string(superhero s);
 
 #endif
