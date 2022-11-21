@@ -14,14 +14,23 @@ Node* push_front(Node *h, string value){
 
 int main(int argc, char const *argv[])
 {
-    vector<string> TAs = {"Alex", "Gautam", "Vino", "Martin"};
+   vector<string> TAs = {"Alex", "Gautam", "Vino", "Martin"};
+    
     TAs.push_back("Gretchan");
     Node *head = nullptr; // Empty linked list
-    head = push_front(head, TAs[0]);
-    head = push_front(head, TAs[1]);
 
-    // for(auto elem: TAs){
-    //     head = push_front(head, elem);
-    // }
+    print(head);
+
+    for(auto elem: TAs){
+        head = push_front(head, elem);
+        print(head);
+    }
+    cout << "Is Vino in list? "<< std::boolalpha << find(head,"Vino") <<endl;
+    cout << "Is Diba in list? "<< std::boolalpha << find(head,"Diba") <<endl;
+    cout << concatenate(head) << endl;
+    cout << "Clear all nodes"<< endl;
+    clear(head);
+    cout << "Print nodes after clear" <<endl;
+    print(head);
     return 0;
 }
