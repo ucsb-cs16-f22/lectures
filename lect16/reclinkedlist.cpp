@@ -12,36 +12,39 @@ Node* push_front(Node *h, string value){
     return p;
 }
 void print(Node *h){
-    Node *p = h;
-    while(p){
-        cout << p->data <<" "; //process the node
-        p = p->next;
+    // Base case(s)
+    if(h == nullptr){
+        cout << endl;
+        return;
     }
-    cout << endl;
+    // Recursive case
+    //1. Print the value of the head of the list
+    cout << h->data << " ";
+    //2. Print the rest of the list
+    print(h->next);
 }
 
 bool find(Node *h, string value){
-    Node *p = h;
-    while(p){
-        if(p->data == value){
-            return true;
-        }
-        p = p->next;
+    // Base case: 1
+    if(!h) {
+        return false;
     }
-    return false;
+    // Base case: 2
+    if(h->data == value){
+        return true;
+    }
+    return find(h->next, value);
+    // Does the code return true or false on a 2-node
+    // linked list "Diba"->"Vino"->nullptr
+    // value = "Vino"   
+ 
 }
 
 void clear(Node *&h){
-    // Delete all the nodes
-   // delete h;  //delete the first node which is wrong
-    Node *p = h;
-    Node *q;
-    while(p){
-        q = p->next;
-        delete p; // 
-        p = q;
-    }
-    h = nullptr;    
+    if(!h) return;
+    clear(h->next);
+    delete h;
+    h = nullptr;
 }
 
 int main(int argc, char const *argv[])
@@ -63,7 +66,12 @@ int main(int argc, char const *argv[])
     clear(head);
     cout << "Print nodes after clear" <<endl;
     print(head);
-    head = push_front(head, "Diba");
+    head = push_front(head, "Vino");
     print(head);
+    cout << "Is Vino in list? "<< std::boolalpha << find(head,"Vino") <<endl;
+    head = push_front(head, "Diba");
+    cout << "Is Vino in list? "<< std::boolalpha << find(head,"Vino") <<endl;
+
+
     return 0;
 }
