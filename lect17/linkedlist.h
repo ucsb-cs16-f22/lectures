@@ -3,13 +3,13 @@
 using namespace std;
 
 struct Node{
-    string data;
-    Node *next;
+   string data;
+   Node *next;
 };
 
 struct LinkedList{
-    Node *head;
-    Node *tail;
+   Node *head;
+   Node *tail;
 };
 
 Node *push_front(Node *h, string value);

@@ -71,7 +71,5 @@ int main(int argc, char const *argv[])
     cout << "Is Vino in list? "<< std::boolalpha << find(head,"Vino") <<endl;
     head = push_front(head, "Diba");
     cout << "Is Vino in list? "<< std::boolalpha << find(head,"Vino") <<endl;
-
-
     return 0;
 }

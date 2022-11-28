@@ -10,4 +10,4 @@ reclist: reclinkedlist.cpp linkedlist.h
 	g++ -std=c++11 reclinkedlist.cpp -o reclist
 
 clean:
-	rm linkedlist
+	rm linkedlist reclist
