@@ -47,29 +47,73 @@ void clear(Node *&h){
     h = nullptr;
 }
 
+
+void push_front(LinkedList& ll, string value){
+
+    ll.head = push_front(ll.head, value);
+    if(ll.tail == nullptr){
+        ll.tail = ll.head;
+    }
+
+}
+void print(LinkedList ll){
+    print(ll.head);
+
+}
+bool find(LinkedList ll, string value){
+    return find(ll.head,value );
+
+}
+void clear(LinkedList& ll){
+    clear(ll.head);
+    ll.head = ll.tail = nullptr;
+}
+
+// delete all the nodes with that value and return the new head of the list
+
+// 10->20->30 , value 10,  20->30
+// 10->20->20->20->30, value 20, 10->30
+// 10->20->30 , value 200,  10->20->30
+Node* deleteNode(Node* h, int value){
+    if(!h) return nullptr;
+    if(h->data == value){
+        Node *newhead = deleteNode(h->next, value);
+        // delete the first node 
+        delete h;
+        // return the list obtained from deleting value from the rest of the list
+        return newhead;
+    }else{
+        // 10->20->20->20->30, value 20, 10->30
+        Node *newhead = deleteNode(h->next, value);
+        h->next = newhead;
+        return h;
+    }
+    
+}
+
 int main(int argc, char const *argv[])
 {
     vector<string> TAs = {"Alex", "Gautam", "Vino", "Martin"};
     
     TAs.push_back("Gretchan");
-    Node *head = nullptr; // Empty linked list
+    LinkedList list {nullptr, nullptr};
 
-    print(head);
+    print(list);
 
     for(auto elem: TAs){
-        head = push_front(head, elem);
-        print(head);
+        push_front(list, elem);
+        print(list);
     }
-    cout << "Is Vino in list? "<< std::boolalpha << find(head,"Vino") <<endl;
-    cout << "Is Diba in list? "<< std::boolalpha << find(head,"Diba") <<endl;
+    cout << "Is Vino in list? "<< std::boolalpha << find(list,"Vino") <<endl;
+    cout << "Is Diba in list? "<< std::boolalpha << find(list,"Diba") <<endl;
     cout << "Clear all nodes"<< endl;
-    clear(head);
+    clear(list);
     cout << "Print nodes after clear" <<endl;
-    print(head);
-    head = push_front(head, "Vino");
-    print(head);
-    cout << "Is Vino in list? "<< std::boolalpha << find(head,"Vino") <<endl;
-    head = push_front(head, "Diba");
-    cout << "Is Vino in list? "<< std::boolalpha << find(head,"Vino") <<endl;
+    print(list);
+    push_front(list, "Vino");
+    print(list);
+    cout << "Is Vino in list? "<< std::boolalpha << find(list,"Vino") <<endl;
+    push_front(list, "Diba");
+    cout << "Is Vino in list? "<< std::boolalpha << find(list,"Vino") <<endl;
     return 0;
 }
